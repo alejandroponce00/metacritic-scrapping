@@ -6,11 +6,11 @@ import {
   Text,
   View,
   ScrollView,
-
+  SafeAreaView,
   TouchableHighlight,
 } from "react-native"; 
 import { getLatestGames } from "./metacritic";
-
+import Constants from 'expo-constants';
 
 
 export default function App() {
@@ -23,6 +23,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
+      <SafeAreaView style={{margin:12}}>
       <ScrollView>
       {games.map((game) =>(
         <View key={game.slug} style={styles.card}>
@@ -35,6 +36,7 @@ export default function App() {
       <Text style={styles.score}>{game.score}</Text>  
     </View>
       ))}</ScrollView>
+      </SafeAreaView>
     </View>
   );
 }
@@ -45,9 +47,10 @@ const styles = StyleSheet.create({
     backgroundColor: "green",
     alignItems: "center",
     justifyContent: "center",
+    paddingTop:Constants.statusBarHeight,
   },
   card:{
-    marginBottom: 10
+    marginBottom: 45
   },
   image:{
     width:107,
@@ -55,6 +58,7 @@ const styles = StyleSheet.create({
           borderRadius: 10,
   },
   title:{
+    marginTop:20,
     fontSize:20,
     fontWeight:"bold",
     marginBottom:10,
