@@ -28,7 +28,7 @@ export function Main() {
       {/* Contenedor para Logo y texto "Creado por Alejandro" */}
       <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 20 }}>
         <Logo />
-        <Text style={{ marginLeft: 10 }}>Web Scrapping con React Native </Text>
+        <Text style={{ marginLeft: 10, alignContent: "center"}}>Web Scrapping </Text>
       </View>
       
 

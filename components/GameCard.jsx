@@ -35,16 +35,21 @@ const styles = StyleSheet.create({
       marginBottom: 45,
     },
     image: {
+      marginHorizontal:"auto",
       width: 107,
       height: 147,
-      borderRadius: 10,
+      borderRadius: 20,
+      
+
+      
     },
     title: {
       marginTop: 20,
-      fontSize: 20,
+      fontSize: 30,
       fontWeight: "bold",
       marginBottom: 10,
       color: "white",
+      textAlign:"center"
     },
     description: {
       fontSize: 16,
