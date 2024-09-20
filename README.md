@@ -10,13 +10,9 @@ Esta aplicación móvil, desarrollada con **React Native**, permite realizar scr
 
 ## 🛠️ Tecnologías Utilizadas
 - ⚛️ **React Native:** Desarrollo de la aplicación móvil multiplataforma.
-- 🌐 **Node.js:** Backend para el proceso de scrapping y manipulación de datos.
-- 🕸️ **Cheerio:** Biblioteca para scrapping en Node.js.
-- 🚀 **Axios:** Cliente HTTP para realizar peticiones a Metacritic.
 
-## 📸 Capturas de Pantalla
-_Inserta aquí capturas
-s de pantalla que muestren la interfaz de la aplicación y ejemplos de datos obtenidos._
+- 🚀 **Fetch:** Cliente HTTP para realizar peticiones a Metacritic.
+
 
 ## 🚀 Instalación
 1. Clona este repositorio.
