@@ -15,7 +15,8 @@ Esta aplicación móvil, desarrollada con **React Native**, permite realizar scr
 - 🚀 **Axios:** Cliente HTTP para realizar peticiones a Metacritic.
 
 ## 📸 Capturas de Pantalla
-_Inserta aquí capturas de pantalla que muestren la interfaz de la aplicación y ejemplos de datos obtenidos._
+_Inserta aquí capturas
+s de pantalla que muestren la interfaz de la aplicación y ejemplos de datos obtenidos._
 
 ## 🚀 Instalación
 1. Clona este repositorio.
