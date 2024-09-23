@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { View, ActivityIndicator, FlatList, Text } from "react-native"; // Mueve Text de 'react-native-svg' a 'react-native'
+import { View, ActivityIndicator, FlatList, Text, Pressable } from "react-native"; // Mueve Text de 'react-native-svg' a 'react-native'
 import { getLatestGames } from "../metacritic";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AnimatedGameCard } from "./GameCard";
 import { Logo } from "./Logo";
+import { Link } from "expo-router";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 export function Main() {
   const [games, setGames] = useState([]);
@@ -30,7 +32,11 @@ export function Main() {
         <Logo />
         <Text style={{ marginLeft: 10, alignContent: "center"}}>Web Scrapping </Text>
       </View>
-      
+      <Link asChild href="/about" >
+      <Pressable>
+      <FontAwesome5 name="info-circle" size={30} color="orange" />
+        </Pressable>
+      </Link>
 
       {games.length === 0 ? (
         <ActivityIndicator color={"black"} size={"large"} />
@@ -43,9 +49,7 @@ export function Main() {
           )}
         />
       )}
-      <View>
-      <Text style={{ textAlign:"center", color:"gray"}}>Creado por Alejandro Ponce</Text>
-      </View>
+      
     </View>
     
   );
