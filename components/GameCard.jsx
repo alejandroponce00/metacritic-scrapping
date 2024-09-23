@@ -4,7 +4,7 @@ import Score from "./Score";
 export function GameCard({ game}){
     return(
         <View
-        className="flex-row bg-blue-900/5 p-4 rounded-xl gap-4 mb-10"
+        className="flex-row bg-slate-500 p-4 rounded-xl gap-4 mb-10"
         key={game.slug} >
             <Image className = "mb-1" source={{ uri: game.image }} style={styles.image} />
            <View>

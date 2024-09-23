@@ -9,7 +9,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 export default function App() {
   return (
     <SafeAreaProvider>
-      <View style={styles.container}>
+      <View className = "bg-slate-900"style={styles.container}>
         <StatusBar style="light" />
 
         <Main />
@@ -21,7 +21,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "gray",    
+       
     alignItems: "center",
     justifyContent: "center",
     paddingTop: Constants.statusBarHeight,
