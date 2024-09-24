@@ -1,15 +1,19 @@
 import { Link } from "expo-router";
 
 import { Pressable, ScrollView, Text, View } from "react-native";
-import AntDesign from '@expo/vector-icons/AntDesign';
+import { HomeIcon } from "../components/Icons";
+import { styled } from "nativewind";
+
+const CuandoAprieto= styled(Pressable);
+
 export default function About() {
   return (
     <ScrollView className="pt-24 px-3">
     <View>
       <Link asChild href="/" >
-      <Pressable>
-      <AntDesign name="home" size={40} color="white" />
-        </Pressable>
+      <CuandoAprieto className={`active:opacity-20`}>
+        < HomeIcon />
+        </CuandoAprieto>
       </Link>
       <Text className="text-white font-bold mb-8 text-2xl">Sobre el proyecto</Text>
       <Text className="text-white mb-4">

@@ -5,7 +5,11 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AnimatedGameCard } from "./GameCard";
 import { Logo } from "./Logo";
 import { Link } from "expo-router";
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { CircleInfoIcon } from "./Icons";
+import { styled } from "nativewind";
+
+
+const CuandoAprieto= styled(Pressable);
 
 export function Main() {
   const [games, setGames] = useState([]);
@@ -33,9 +37,9 @@ export function Main() {
         <Text style={{ marginLeft: 10, alignContent: "center"}}>Web Scrapping </Text>
       </View>
       <Link asChild href="/about" >
-      <Pressable>
-      <FontAwesome5 name="info-circle" size={30} color="orange" />
-        </Pressable>
+      <CuandoAprieto className={`active:opacity-20`}>
+      <CircleInfoIcon />
+        </CuandoAprieto>
       </Link>
 
       {games.length === 0 ? (
