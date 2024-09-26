@@ -3,12 +3,14 @@ import { Link } from "expo-router";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { HomeIcon } from "../components/Icons";
 import { styled } from "nativewind";
+import { Screen } from "../components/Screen";
 
 const CuandoAprieto= styled(Pressable);
 
 export default function About() {
   return (
-    <ScrollView className="pt-24 px-3">
+    <Screen>
+    <ScrollView>
     <View>
       <Link asChild href="/" >
       <CuandoAprieto className={`active:opacity-20`}>
@@ -29,6 +31,6 @@ export default function About() {
 🚀 Fetch: Cliente HTTP para realizar peticiones a Metacritic.
       </Text>
       
-   </View></ScrollView>
+   </View></ScrollView></Screen>
   );
 }

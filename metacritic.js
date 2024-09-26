@@ -36,7 +36,7 @@ export async function getLatestGames() {
     const json = await rawData.json();
   
     const { components } = json;
-    const { title, description, criticScoreSummary, images } = components[0];
+    const { title, description, criticScoreSummary, images } = components[0].data.item;
     const { score } = criticScoreSummary;
   
     // get the card image
