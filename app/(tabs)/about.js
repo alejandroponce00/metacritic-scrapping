@@ -1,9 +1,9 @@
 import { Link } from "expo-router";
 
 import { Pressable, ScrollView, Text, View } from "react-native";
-import { HomeIcon } from "../components/Icons";
+import { HomeIcon } from "../../components/Icons";
 import { styled } from "nativewind";
-import { Screen } from "../components/Screen";
+import { Screen } from "../../components/Screen";
 
 const CuandoAprieto= styled(Pressable);
 

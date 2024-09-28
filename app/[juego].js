@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { View, Text, ActivityIndicator, ScrollView, Image } from "react-native";
 import { Screen } from "../components/Screen";
 import { getGameDetails } from "../metacritic";
+import Score from "../components/Score";
 
 export default function Detail() {
     const {juego} = useLocalSearchParams();
@@ -37,13 +38,14 @@ export default function Detail() {
             className="mb-4 rounded"
             source={{uri: gameInfo.img}}
             style={{width:214, height:294}} />
+            <Score score={gameInfo.score} maxScore={100} />
 
-            </View>
-            <Text className="text-center text-white font-bold mb-8 text-2xl">
-          {gameInfo.score}
+            
+            <Text className="text-center text-white font-bold mb-8 mt-4">
+          {gameInfo.description}
           
         </Text>
-        
+        </View>
           </ScrollView>
         )
       }
