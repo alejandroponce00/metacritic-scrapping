@@ -1,4 +1,5 @@
 # 🎮 Metacritic Scraper App
+![Link an image.](/metaccri.jpg)
 
 ## 📖 Descripción
 Esta aplicación móvil, desarrollada con **React Native**, permite realizar scrapping del sitio web [Metacritic](https://www.metacritic.com) para obtener información detallada sobre diversos juegos y sus puntajes. Utiliza técnicas de web scraping para recopilar datos de manera automatizada, proporcionando a los usuarios acceso rápido y fácil a evaluaciones críticas y reseñas de juegos populares.
